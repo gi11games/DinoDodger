@@ -1,0 +1,14 @@
+Couldn't open C:\dev\Godot/godot.windows.opt.tools.64.pck
+Couldn't open godot.windows.opt.tools.64.pck
+Couldn't load/find C:/dev/Godot/Godot/Prototypes/DinoDodger/project.godot or project.binary
+Couldn't load/find C:/dev/Godot/Godot/Prototypes/project.godot or project.binary
+Couldn't load/find C:/dev/Godot/Godot/project.godot or project.binary
+Couldn't load/find C:/dev/Godot/project.godot or project.binary
+Couldn't load/find C:/dev/project.godot or project.binary
+Couldn't load/find C://project.godot or project.binary
+OpenGL ES 3.0 Renderer: Intel(R) Iris(TM) Graphics 540
+GLES3: max ubo light: 409
+GLES3: max ubo reflections: 455, ubo size: 144
+WARNING: not found: gdnative/singletons
+Registered interface Native mobile
+SVG_GENERATION TIME: 0.199

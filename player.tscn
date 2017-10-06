@@ -1,0 +1,58 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://sprite/vita/run_DinoSprites5.png" type="Texture" id=2]
+[ext_resource path="res://sprite/vita/run_DinoSprites6.png" type="Texture" id=3]
+[ext_resource path="res://sprite/vita/run_DinoSprites7.png" type="Texture" id=4]
+[ext_resource path="res://sprite/vita/run_DinoSprites8.png" type="Texture" id=5]
+[ext_resource path="res://sprite/vita/run_DinoSprites9.png" type="Texture" id=6]
+[ext_resource path="res://sprite/vita/run_DinoSprites10.png" type="Texture" id=7]
+[ext_resource path="res://sprite/vita/idle_DinoSprites1.png" type="Texture" id=8]
+[ext_resource path="res://sprite/vita/idle_DinoSprites2.png" type="Texture" id=9]
+[ext_resource path="res://sprite/vita/idle_DinoSprites3.png" type="Texture" id=10]
+[ext_resource path="res://sprite/vita/idle_DinoSprites4.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 6.8, 7.84507 )
+
+[node name="player" type="KinematicBody2D" groups=[
+"player",
+]]
+
+position = Vector2( 64.5776, 60.169 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="sprite" type="AnimatedSprite" parent="."]
+
+frames = SubResource( 1 )
+animation = "run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+

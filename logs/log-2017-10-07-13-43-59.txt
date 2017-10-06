@@ -1,0 +1,29 @@
+Couldn't open C:\dev\Godot/godot.windows.opt.tools.64.pck
+Couldn't open godot.windows.opt.tools.64.pck
+OpenGL ES 3.0 Renderer: Intel(R) Iris(TM) Graphics 540
+GLES3: max ubo light: 409
+GLES3: max ubo reflections: 455, ubo size: 144
+Registered interface Native mobile
+2
+3
+2
+2
+1
+3
+3
+3
+3
+3
+3
+3
+1
+1
+3
+1
+3
+2
+1
+2
+1
+2
+3

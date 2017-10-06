@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://mort.gd" type="Script" id=1]
+[ext_resource path="res://sprite/mort/mort_tear.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.66831, 7.89204 )
+
+[node name="mort" type="KinematicBody2D" groups=[
+"dino",
+]]
+
+position = Vector2( 79.8091, 9.49186 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+flip_v = true
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="shape" type="CollisionShape2D" parent="."]
+
+position = Vector2( 1.5317, 1.08103 )
+scale = Vector2( 0.843825, 1 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+

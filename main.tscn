@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sprite/1.png" type="Texture" id=1]
+[ext_resource path="res://platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://dinos.gd" type="Script" id=4]
+
+[node name="main" type="Node"]
+
+_sections_unfolded = [ "Pause" ]
+
+[node name="sprite" type="Sprite" parent="."]
+
+position = Vector2( 79.2818, 65.1951 )
+scale = Vector2( 0.2, 0.1 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platforms" type="Node" parent="."]
+
+editor/display_folded = true
+
+[node name="platform" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( -3.65877, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform2" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 12.3412, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform3" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 28.3412, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform4" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 44.3412, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform5" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 60.3412, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform6" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 76.3412, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform7" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 92.3412, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform8" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 108.341, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform9" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 124.341, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform10" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 140.341, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="platform11" parent="platforms" instance=ExtResource( 2 )]
+
+position = Vector2( 156.341, 160.812 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+
+position = Vector2( 59.5451, 146.817 )
+
+[node name="dinos" type="Node" parent="."]
+
+script = ExtResource( 4 )
+
+[node name="timer" type="Timer" parent="dinos"]
+
+process_mode = 1
+wait_time = 0.5
+one_shot = false
+autostart = true
+
+[connection signal="timeout" from="dinos/timer" to="dinos" method="_on_timer_timeout"]
+
+

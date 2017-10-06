@@ -1,0 +1,10 @@
+Couldn't open C:\dev\Godot/godot.windows.opt.tools.64.pck
+Couldn't open godot.windows.opt.tools.64.pck
+OpenGL ES 3.0 Renderer: Intel(R) Iris(TM) Graphics 540
+GLES3: max ubo light: 409
+GLES3: max ubo reflections: 455, ubo size: 144
+Registered interface Native mobile
+3
+2
+**ERROR**: Node not found: camera/shaker
+   At: scene\main\node.cpp:1518:Node::get_node() - Condition ' !node ' is true. returned: 0
